@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace, Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 1.2rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+div {
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+}
+
+.parentdiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.parentdiv>label {
+    flex-basis: 100%;
+}
+
+.parentdiv .child {
+    min-height: 33.3vh;
+    min-width: 33.3px;
+    /* min-height: 100px; */
+    /* min-width: 100px; */
+}
+
+/* Not sure why flex basis 33% is not working it should add upto 99% for three boxes */
+/* Maybe later when i try to fix it works?? */
+.r1,
+.r2 {
+    flex-basis: 25%;
+    /* flex-basis: calc(33.3333%); */
+}
+
+
+@media (max-width:335px) {
+
+    body {
+        font-size: 1rem;
+    }
+
+    .r1,
+    .r2 {
+        flex-basis: 19%;
+    }
+}
