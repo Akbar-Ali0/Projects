@@ -1,0 +1,91 @@
+:root {
+    --font-main: 'Noto Sans', sans-serif;
+    --bg-main: #131417;
+    --bg-card: #1e1f26;
+    --bg-stats: #131417;
+    --username: #b7bbc8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.container {
+    background-color: rgba(20, 20, 20, 0.774);
+    margin: 2em;
+    border-radius: 10px;
+    min-width: 320px;
+    max-width: 400px;
+}
+
+/* What if we give the multiple images with separate dimensions */
+/* object-fit: cover; */
+
+.image {
+    width: 80%;
+    margin: auto;
+    object-fit: cover;
+}
+
+.image>img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.info {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    /* border: 1px dashed yellow; */
+}
+
+
+.info>.info-image {
+    /* border: 2px solid rgb(0, 30, 128); */
+    width: 60px;
+    margin-right: 1em;
+}
+
+.info>.info-image>img {
+    background-color: black;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.info>.info-data {
+    line-height: 1.4em;
+    /* position: absolute;
+    border: 2px solid purple;
+    display: inline-block;
+    height: 50px;
+    line-height: 1.5em; */
+}
+
+.card-stats {
+    width: 80%;
+    margin: auto;
+    display: none;
+}
+
+.card-stats li {
+    /* background-color: blue; */
+    margin-top: 0.5em;
+    margin-right: 1em;
+    margin-bottom: 1em;
+    list-style: none;
+
+}
+
+.card-stats:hover {
+    display: flex;
+}
