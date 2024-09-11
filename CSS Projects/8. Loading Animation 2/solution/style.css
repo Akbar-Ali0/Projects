@@ -3,9 +3,9 @@
     padding: 0;
 }
 
-body {
+/* body {
     background-color: black;
-}
+} */
 
 .container {
     display: flex;
@@ -15,15 +15,30 @@ body {
 }
 
 .cube {
-
+    height: 1.5em;
+    width: 1.5em;
+    margin: .5em;
+    animation: rotate infinite 2s;
 }
 
-@keyframes box-rotation {
-    from {
+.cube1 {
+    background-color: red;
+}
 
+.cube2 {
+    background-color: orange;
+}
+
+.cube3 {
+    background-color: blue;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(-45deg);
     }
 
     to {
-
+        transform: rotate(45deg);
     }
 }
