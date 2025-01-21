@@ -1,0 +1,8 @@
+.card {
+    background-color: beige;
+    margin: 10px;
+    width: 20vw;
+    border: 2px solid black;
+    min-height: 200px;
+    overflow: hidden;
+}
