@@ -1,0 +1,104 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* ---------------------------------------------------------- */
+.container {
+  margin-top: 25px !important;
+  padding: 5px;
+  border: 2px dashed black;
+  max-width: 50vw;
+  margin: auto;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.topBanner {
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+  position: absolute;
+  top: -10px;
+  left: -20px;
+  font-size: 24px;
+  height: 40px;
+}
+
+/* .stack-top {
+  z-index: 100;
+} */
+
+/* ---------------------------------------------------------- */
+.largerFont {
+  font-size: x-large;
+}
+
+.smallerFront {
+  font-size: small;
+}
+
+/* .tableBorder {
+  border: none;
+} */
+
+
+
+table {
+  border-collapse: collapse;
+  width: inherit;
+  margin: auto;
+  min-height: 80px;
+  text-align: center;
+}
+
+thead>th {
+  padding: 5px;
+}
+
+tbody {
+  border: 2px solid black;
+  height: 60px;
+}
+
+.colDueDate {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+}
+
+.colspace {
+  width: 50px;
+}
+
+.colProgress {
+  /* border: 2px solid black; */
+  margin: 5px;
+  /* border-collapse: separate; */
+  /* border-left: 20px solid black; */
+  /* border-right: 20px solid black; */
+  /* padding-left: 20px; */
+  /* padding-right: 20px; */
+}
+
+.colDone {}
+
+
+.toDoList {
+  margin-top: 10vh;
+}
+
+/* ---------------------------------------------------------- */
+.inputContainer {
+  margin-top: 5vh;
+}
