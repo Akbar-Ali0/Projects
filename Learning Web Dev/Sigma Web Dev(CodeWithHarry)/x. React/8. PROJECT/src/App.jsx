@@ -86,7 +86,9 @@ function App() {
           <button onClick={handleAdd} disabled={todo.length <= 3} className='bg-violet-800 hover:bg-violet-950 disabled:bg-violet-700 p-2 py-1 font-bold text-white rounded-md'>Save</button>
         </div>
 
-        <input className='my-4' onChange={toggleFinished} type="checkbox" checked={showFinished} name="" id="" /> Show Finished
+        <input className='my-4' onChange={toggleFinished} type="checkbox" checked={showFinished} name="" id="" /> 
+        <label className='mx-2' htmlFor="show">Show Finished</label>
+        <div className="h-[1px] bg-black opacity-15 w-[90%] mx-auto my-2"></div>
 
         <h2 className='text-lg font-bold'>Your Todo's</h2>
         <div className="todos">
